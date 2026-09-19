@@ -70,7 +70,7 @@ function getEmptyMessage() {
   }
 
   if (activeFilter === "completed") {
-    return "目前還沒有已完成事項。";
+    return "目前沒有已完成的事項；項目只是被篩選掉了，並未刪除。";
   }
 
   return "還沒有任何待辦事項，新增一個吧!";
