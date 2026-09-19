@@ -17,6 +17,7 @@
   --focus-outline: rgba(40, 119, 93, 0.3);
   --button-hover: #9ed8bc;
   --delete-hover: #fff0f0;
+  --clear-hover: #f8dfdf;
 }
 
 html[data-theme="light"] {
@@ -43,6 +44,7 @@ html[data-theme="dark"] {
   --focus-outline: rgba(155, 224, 187, 0.36);
   --button-hover: #9be0bb;
   --delete-hover: #482f32;
+  --clear-hover: #5a383b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,6 +68,7 @@ html[data-theme="dark"] {
     --focus-outline: rgba(155, 224, 187, 0.36);
     --button-hover: #9be0bb;
     --delete-hover: #482f32;
+    --clear-hover: #5a383b;
   }
 }
 
@@ -307,12 +310,36 @@ h1 {
 }
 
 .app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   padding-top: 22px;
   margin-top: 20px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.clear-completed-button {
+  padding: 7px 10px;
+  color: var(--danger);
+  background: transparent;
+  border: 1px solid var(--danger);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.clear-completed-button:hover,
+.clear-completed-button:focus-visible {
+  background: var(--clear-hover);
+}
+
+.clear-completed-button:focus-visible {
+  outline: 3px solid var(--focus-outline);
+  outline-offset: 2px;
 }
 
 .sr-only {
@@ -371,5 +398,10 @@ h1 {
 
   .theme-label {
     display: none;
+  }
+
+  .app-footer {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
