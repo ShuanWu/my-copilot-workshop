@@ -1,10 +1,14 @@
+![工作坊完成徽章](https://img.shields.io/badge/GitHub_Copilot_實戰工作坊-已完成-1F883D?style=for-the-badge&logo=githubcopilot&logoColor=white)
+![Agent Mode](https://img.shields.io/badge/Agent_Mode-已實作-1E2761?style=flat-square)
+![MCP](https://img.shields.io/badge/MCP-已整合-1E2761?style=flat-square)
+![Agentic Workflow](https://img.shields.io/badge/Agentic_Workflow-已建立-1E2761?style=flat-square)
 # 今日待辦：GitHub Copilot 實戰工作坊作品集
 
 這是一個在 GitHub Copilot 實戰工作坊中完成的待辦清單 Web App。作品以純前端技術實作，讓使用者可以建立、管理與篩選日常待辦事項，並將資料保存在瀏覽器中。
 
 ## 線上展示
 
-[查看線上展示](https://<你的帳號>.github.io/<你的repo名稱>/)
+[查看線上展示](https://shuanwu.github.io/my-copilot-workshop/)
 
 > 請將網址中的 `<你的帳號>` 與 `<你的repo名稱>` 替換成實際的 GitHub 帳號與 repository 名稱。
 
